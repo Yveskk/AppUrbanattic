@@ -6,7 +6,7 @@ class AtticProvider {
   static final API_URL = "";
   static final dio = Dio();
 
-  static Future<Attic>() async {
+  static Future<List<Attic>> getList() async {
     var response = await dio.get(API_URL);
     if (response.statusCode == 200) {
       List<Map<String, dynamic>> data = response.data;

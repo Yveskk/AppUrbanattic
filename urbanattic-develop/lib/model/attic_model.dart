@@ -11,14 +11,14 @@ class Attic {
   @HiveField(1)
   final String name;
   @HiveField(2)
-  final String description;
+  final String? description;
   @HiveField(3)        
   final List<String> images;
 
   Attic({
     required this.id,
     required this.name,
-    required this.description,
+    this.description,
     required this.images,
   });
 
@@ -26,7 +26,7 @@ class Attic {
     return Attic(
       name: json['name'],
       description: json['description'],
-      images: json['image'],
+      images: json['images'],
       id: json['id'],
     );
   }

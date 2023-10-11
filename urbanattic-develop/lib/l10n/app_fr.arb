@@ -1,0 +1,66 @@
+{
+  "appName": "Urbanattic",
+  
+  "welcomePage1Title": "Produits agricoles Bio",
+  "welcomePage1Message": "Avec Urbanattic, consommez exclusivement des produits locaux et frais issus de l'agriculture biologique.",
+  
+  "welcomePage2Title": "Cuisine partagée",
+  "welcomePage2Message": " Réservez votre cuisine sur Urbanattic pour vos pauses déjeuner et vivez une expérience culinaire exceptionnelle avec nos produits.",
+  
+  "welcomePage3Title": "Proposez un terrain",
+  "welcomePage3Message": "Si vous avez un terrain disponible, proposez-le sur Urbanattic et participez avec nous à la promotion de l'agriculture de proximité.",
+
+  "welcomePage4Title": "Proposer des services",
+  "welcomePage4Message": "Que vous soyez à la recherche d'un emploi ou que vous souhaitiez offrir votre main-d'œuvre, Urbanattic est là pour vous.",
+
+  "skipButtonText": "Sauter",
+  "startButtonText": "Suivant",
+   
+  "loginPageTitle": "Entrez votre numéro de téléphone",
+  "loginPageMessage": "Urbanattic devra vérifier votre compte.",
+  "chooseCountryHintText": "Choisissez votre pays",
+  "phoneNumberHintText": "n° téléphone",
+
+  "confirmCodePageTitle": "Code de confirmation",
+  "confirmCodePageMessage": "Veuillez saisir le code de confirmation qui vous a été envoyé sur votre numéro de téléphone {phoneNumber}.",
+
+  "completeProfilePageTitle": " Informations personnelles",
+  "completeProfilePageMessage": "Veuillez saisir vos informations personnelles",
+  "fistNameTextFieldHint": "Prénom",
+  "lastNameNameTextFieldHint": "Nom",
+  "saveButtonText": "Enregistrer",
+
+  "chooseCountryTitle": "Choisissez votre pays",
+
+  "chooseAtticTitle": "Choisissez votre grenier",
+  "sharedKitchen": "Cuisine partagée",
+  "offerPlot": "Proposer un terrain",
+  "offerServices": "Proposer services",
+  "searchAtticHintText": "Rechercher un grenier",
+  "nearestAttics": "Greniers les plus proches",
+
+  "reservationTitle": "Nouvelle reservation",
+  "dateCalendrier": "Date",
+  "heureArrive": "Heure d'arrivée",
+  "heureDepart": "Heure de dépard",
+  "nombrePersonne": "Nombre de personne invitées",
+  "grenie": "Grenier",
+
+    "reservationPage": " Reservation",
+    "dateHeure": " 15/08/2023 * 8h30-10h00",
+  "personnes": " 5",
+  "grenierText": "Grenier Woelabs",
+
+  "nouvelButtonText": "Nouvelle demande",
+
+
+   "adresse": "addresse",
+  "nameProprietaire": "Nom propriétaire",
+  "grenierDemande": "Grenier",
+  "descriptionDemande": "description",
+
+   "personne": "Pour",
+  "titre": "Titre",
+  "demandeur": "Nom demandeur",
+  "descriptionDemande": "description"
+}

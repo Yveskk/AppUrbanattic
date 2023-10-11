@@ -2,10 +2,11 @@ import 'package:dio/dio.dart';
 import 'package:urbanattic/model/attic_model.dart';
 
 class AtticProvider {
-  final API_URL = "";
-  final dio = Dio();
+  // Complete with api url (cc postman)
+  static final API_URL = "";
+  static final dio = Dio();
 
-  Future<Attic>() async {
+  static Future<Attic>() async {
     var response = await dio.get(API_URL);
     if (response.statusCode == 200) {
       List<Map<String, dynamic>> data = response.data;
@@ -13,7 +14,7 @@ class AtticProvider {
           .map((e) => Attic(
                 id: e['id'],
                 name: e['name'],
-                images: e[''],
+                images: e['images'],
               ))
           .toList();
       return listAttics;

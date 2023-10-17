@@ -6,8 +6,6 @@ import { Attic } from '../components/attic/entity/attic.entity';
 import { Reservation } from '../components/reservation/entity/reservation.entity';
 import { Ground } from '../components/ground/entity/ground.entity';
 import { JobOffer } from '../components/job_offert/entity/jobOffer.entity';
-import { OfferService } from '../components/offer_service/entity/offerService.entity';
-import { Order } from '../components/order/entity/order';
 
 export const typeOrmConfig = TypeOrmModule.forRoot({
   type: 'postgres',
@@ -16,15 +14,6 @@ export const typeOrmConfig = TypeOrmModule.forRoot({
   username: appConfig.dbUsername,
   password: appConfig.dbPassword,
   database: appConfig.dbName,
-  entities: [
-    User,
-    Product,
-    Attic,
-    Reservation,
-    Ground,
-    JobOffer,
-    OfferService,
-    Order,
-  ],
+  entities: [User, Product, Attic, Reservation, Ground, JobOffer],
   synchronize: true,
 });

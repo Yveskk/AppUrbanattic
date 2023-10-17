@@ -1,4 +1,3 @@
-/* eslint-disable prettier/prettier */
 import {
   Body,
   Controller,
@@ -9,20 +8,14 @@ import {
   Put,
 } from '@nestjs/common';
 import { JobOfferService } from './jobOffer.service';
-import { JobOfferGateway } from 'src/components/job_offert/jobOffer.gateway';
 
 @Controller('joboffer')
 export class JobOfferController {
-  constructor(
-    private readonly jobOfferService: JobOfferService,
-    private jobOfferGateway: JobOfferGateway,
-  ) {}
+  constructor(private readonly jobOfferService: JobOfferService) {}
 
   @Post()
   async createJobOffer(@Body() body: any) {
-    const jobOffer = await this.jobOfferService.create(body);
-    this.jobOfferGateway.handleNewJobOffer(jobOffer);
-    return jobOffer;
+    return await this.jobOfferService.create(body);
   }
 
   @Get()

@@ -4,6 +4,4 @@ export interface CreateAtticDto {
   createBy: string;
   images: string[];
   state: boolean;
-  openningTime: string;
-  closureHour: string;
 }

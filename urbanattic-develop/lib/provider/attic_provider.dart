@@ -3,7 +3,7 @@ import 'package:urbanattic/model/attic_model.dart';
 
 class AtticProvider {
   // Complete with api url (cc postman)
-  static final API_URL = "";
+  static final API_URL = "http:localhost:3000/attic";
   static final dio = Dio();
 
   static Future<List<Attic>> getList() async {

@@ -29,7 +29,7 @@ class _HomePageState extends State<HomePage> {
             return [
               SliverAppBar(
                 toolbarHeight: 80.0,
-                title: const Text("Bonjour, bienvenu"),
+                title: const Text("Bonjour, bienvenue"),
                 titleTextStyle:
                     Theme.of(context).textTheme.headlineMedium!.copyWith(
                           fontWeight: FontWeight.bold,

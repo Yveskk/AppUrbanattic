@@ -1,5 +1,8 @@
 /* eslint-disable prettier/prettier */
-import { Injectable, InternalServerErrorException } from '@nestjs/common';
+import {
+  Injectable,
+  InternalServerErrorException,
+} from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { JobOffer } from './entity/jobOffer.entity';
 import { Repository } from 'typeorm';
@@ -8,7 +11,6 @@ import { UpdateJobOfferDto } from './dto/update.jobOffer.dto';
 
 @Injectable()
 export class JobOfferService {
-  const;
   constructor(
     @InjectRepository(JobOffer)
     private jobOffersRepository: Repository<JobOffer>,
@@ -50,9 +52,9 @@ export class JobOfferService {
     }
   }
 
-  async delete(id: string) {
+  delete(id: string) {
     try {
-      return await this.jobOffersRepository.delete(id);
+      return this.jobOffersRepository.delete(id);
     } catch (error) {
       if (error instanceof InternalServerErrorException) {
         throw new InternalServerErrorException('Error deleting job offer');
@@ -62,9 +64,9 @@ export class JobOfferService {
     }
   }
 
-  async update(id: string, jobOffer: UpdateJobOfferDto) {
+  update(id: string, jobOffer: UpdateJobOfferDto) {
     try {
-      return await this.jobOffersRepository.update(id, jobOffer);
+      return this.jobOffersRepository.update(id, jobOffer);
     } catch (error) {
       if (error instanceof InternalServerErrorException) {
         throw new InternalServerErrorException('Error updating job offer');

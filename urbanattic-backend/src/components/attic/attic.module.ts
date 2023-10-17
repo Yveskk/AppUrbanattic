@@ -10,7 +10,3 @@ import { AtticController } from './attic.controller';
   providers: [AtticService],
 })
 export class AtticModule {}
-
-
-
-

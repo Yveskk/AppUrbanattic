@@ -19,10 +19,4 @@ export class Attic {
 
   @Column({ default: true })
   state: boolean;
-
-  @Column()
-  openningTime: string;
-
-  @Column()
-  closureHour: string;
 }
